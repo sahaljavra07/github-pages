@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Creative Landing Page</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body{
+    margin:0;
+    background:grey;
+    color:black;
+  }
+  a{
+    text-decoration:none;
+    color:red;
+  }
+  a:hover{
+    color:green;
+  }
+
+  .container{
+    max-width:1100px;
+    padding:20px;
+    margin:0 auto;
+  }
+
+  header{
+    background: #152238;
+    color:red;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  header h1{
+    margin:0;
+    font-weight: 800;
+    font-size:2;
+  }
+  nav a{
+    margin-left:20px;
+    font-weight:600;
+    font-size:1;
+  }
+  nav{
+    flex-grow:1;
+    text-align:right;
+    min-width:200px;
+  }
+  .hero{
+    background:linear-gradient(135deg, #4a90e2, #50e3c2);
+    color:red;
+    padding:60px 20px 80px;
+    text-align:center;
+  }
+  .hero h2{
+    font-size:3;
+    margin-bottom:16px;
+    font-weight:700;
+  }
+  .hero p{
+    font-size:1.3rem;
+    max-width:600px;
+    margin:0 auto 30px;
+    line-height:1.6;
+  }
+  .cta-button{
+    background:#fff;
+    color:red;
+    padding:14px 32px;
+    font-weight:700;
+    font-size:1.1rem;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+  }
+  .cta-button:hover {
+    background:red;
+    color:#fff;
+  }
+  .features {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    padding:60px 20px;
+    background:white;
+  }
+  .feature{
+    background:#f0f5f9;
+    flex-basis:30%;
+    margin-bottom:30px;
+    padding:25px 20px;
+    border-radius:12px;
+    box-shadow:0 8px 18px rgba(32, 52, 73, 0.1);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    transition:box-shadow 0.25s ease;
+  }
+  .feature:hover{
+    box-shadow:0 15px 30px rgba(74, 144, 226, 0.3);
+  }
+  .feature-icon{
+    font-size:48px;
+    margin-bottom:18px;
+    color:red;
+  }
+  .feature h3 {
+    font-weight:700;
+    font-size:1.4rem;
+    margin-bottom:12px;
+    color:red;
+  }
+  .feature p{
+    font-size:1rem;
+    line-height:1.5;
+    color:#536777;
+  }
+  footer{
+    background:#152238;
+    color:red;
+    text-align:center;
+    padding:23px 20px;
+    font-size:1rem;
+    user-select:none;
+  }
+  @media (max-width:900px) {
+    .features{
+      flex-direction:column;
+      padding:40px 10px;
+    }
+    .feature{
+      flex-basis:100%;
+      max-width:420px;
+      margin:0 auto 30px;
+    }
+  }
+  @media (max-width:400px) {
+    header{
+      flex-direction:column;
+      gap:12px;
+      text-align:center;
+    }
+    nav{
+      text-align:center;
+      min-width:auto;
+      margin-top:8px;
+    }
+  }
+  @media (max-width:350px){
+    body{
+      font-size:14px;
+    }
+    .hero h2{
+      font-size:2rem;
+    }
+    .cta-button{
+      padding:12px 24px;
+      font-size:1rem;
+    }
+    .features{
+      padding:30px 10px;
+    }
+    .feature{
+      padding:18px 15px;
+    }
+  }
+</style>
+</head>
+<body>
+<header class="container">
+  <h1>LandingPage</h1>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome To The Project</h2>
+  <p>Explore Your Mind and Show Your Ultimate Passion Towards Your Work!</p>
+  <button class="cta-button" onclick="alert('Get Started Clicked!')">Get Started</button>
+</section>
+
+<section class="features container" id="features">
+  <div class="feature">
+    <div class="feature-icon">🚀</div>
+    <h3>Fast Setup</h3>
+    <p>Our templates are designed to get you started quickly with minimal setup and maximum flexibility.</p>
+  </div>
+  <div class="feature">
+    <div class="feature-icon">🎨</div>
+    <h3>Creative Design</h3>
+    <p>Beautiful UI and intuitive layouts help your content stand out and engage your visitors.</p>
+  </div>
+  <div class="feature">
+    <div class="feature-icon">📱</div>
+    <h3>Mobile First</h3>
+    <p>Optimized for phones, tablets, and desktops to look perfect on any device.</p>
+  </div>
+</section>
+
+<section class="container" id="about" style="padding-bottom: 60px;">
+  <h2 style="text-align:center; margin-bottom: 20px; color:red;">About Us</h2>
+  <p style="text-align:center; max-width: 700px; margin: 0 auto; line-height: 1.6; color:red;">
+    LandingPage is a site for building web-pages and exploring your mind and ideas
+  </p>
+</section>
+
+<footer>
+  &copy; 2025 LandingPage. All rights reserved. | <a href="#contact" style="color:red;">Contact Us</a>
+</footer>
+</body>
+</html>
